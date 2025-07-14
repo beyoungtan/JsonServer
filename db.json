@@ -1,14 +1,37 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+    "caseId": 1,
+    "caseName": "后视镜锁车自动折叠测试",
+    "isPass": false,
+    "caseTestCount": 1,
+    "Interval": 0,
+    "failRetryCount": 3,
+    "groupId": 1,
+    "steps": [
+      {
+        "stepIndex": 1,
+        "stepName": "后视镜锁车自动折叠关闭TEST",
+        "readPropertyId": "ID_VCH_TEST_AUTO",
+        "writePropertyId": "ID_VCH_TEST_AUTO",
+        "readPropertyValue": 0,
+        "writePropertyValue": 0,
+        "valueType": 0,
+        "executeTime": 4000,
+        "Interval": 0,
+        "ResultCheck": true
+      },
+     {
+        "stepIndex": 2,
+        "stepName": "后视镜锁车自动折叠打开TEST",
+        "readPropertyId": "ID_VCH_TEST_AUTO",
+        "writePropertyId": "ID_VCH_TEST_AUTO",
+        "readPropertyValue": 1,
+        "writePropertyValue": 1,
+        "valueType": 0,
+        "executeTime": 4000,
+        "Interval": 0,
+        "ResultCheck": true
+      }
+    ]
   }
-}
+]
