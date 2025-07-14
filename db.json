@@ -1,0 +1,37 @@
+[
+  {
+    "caseId": 1,
+    "caseName": "TESTCASE1",
+    "isPass": false,
+    "caseTestCount": 1,
+    "Interval": 0,
+    "failRetryCount": 3,
+    "groupId": 1,
+    "steps": [
+      {
+        "stepIndex": 1,
+        "stepName": "TESTSTEP1",
+        "readPropertyId": "ID_VCH_TEST_AUTO",
+        "writePropertyId": "ID_VCH_TEST_AUTO",
+        "readPropertyValue": 0,
+        "writePropertyValue": 0,
+        "valueType": 0,
+        "executeTime": 4000,
+        "Interval": 0,
+        "ResultCheck": true
+      },
+     {
+        "stepIndex": 2,
+        "stepName": "TESTSTEP2",
+        "readPropertyId": "ID_VCH_TEST_AUTO",
+        "writePropertyId": "ID_VCH_TEST_AUTO",
+        "readPropertyValue": 1,
+        "writePropertyValue": 1,
+        "valueType": 0,
+        "executeTime": 4000,
+        "Interval": 0,
+        "ResultCheck": true
+      }
+    ]
+  }
+]
