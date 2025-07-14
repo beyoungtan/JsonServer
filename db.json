@@ -1,7 +1,7 @@
 [
   {
     "caseId": 1,
-    "caseName": "后视镜锁车自动折叠测试",
+    "caseName": "TESTCASE1",
     "isPass": false,
     "caseTestCount": 1,
     "Interval": 0,
@@ -10,7 +10,7 @@
     "steps": [
       {
         "stepIndex": 1,
-        "stepName": "后视镜锁车自动折叠关闭TEST",
+        "stepName": "TESTSTEP1",
         "readPropertyId": "ID_VCH_TEST_AUTO",
         "writePropertyId": "ID_VCH_TEST_AUTO",
         "readPropertyValue": 0,
@@ -22,7 +22,7 @@
       },
      {
         "stepIndex": 2,
-        "stepName": "后视镜锁车自动折叠打开TEST",
+        "stepName": "TESTSTEP2",
         "readPropertyId": "ID_VCH_TEST_AUTO",
         "writePropertyId": "ID_VCH_TEST_AUTO",
         "readPropertyValue": 1,
