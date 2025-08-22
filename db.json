@@ -1,36 +1,32 @@
 {
   "1":[
   {
+    "testType": "老化测试",
+    "caseType": "INIT",
     "caseId": 1,
-    "caseName": "TESTCASE1",
-    "isPass": false,
-    "caseTestCount": 1,
-    "Interval": 0,
-    "failRetryCount": 3,
-    "groupId": 1,
+    "prerequisiteCaseId": 0,
+    "caseName": "车辆控制 - 尾门",
+    "Interval": 1000,
+    "caseRepeatCount": 5,
+    "failRetryNumber": 2,
+    "isActive": true,
+    "caseCategory": "车辆控制",
+    "caseSubCategory": "车灯控制",
     "steps": [
       {
-        "stepIndex": 1,
-        "stepName": "TESTSTEP1",
-        "readPropertyId": "ID_VCH_TEST_AUTO",
-        "writePropertyId": "ID_VCH_TEST_AUTO",
-        "readPropertyValue": 0,
-        "writePropertyValue": 0,
-        "valueType": 0,
+        "stepId": 1,
+        "prerequisiteStepId": 0,
+        "stepName": "开",
+        "description": "确认打开车窗信号",
+        "IsAutomated": true,
+        "sunnyRainyMode": 0,
         "executeTime": 4000,
-        "Interval": 0,
-        "ResultCheck": true
-      },
-     {
-        "stepIndex": 2,
-        "stepName": "TESTSTEP2",
-        "readPropertyId": "ID_VCH_TEST_AUTO",
-        "writePropertyId": "ID_VCH_TEST_AUTO",
-        "readPropertyValue": 1,
-        "writePropertyValue": 1,
-        "valueType": 0,
-        "executeTime": 4000,
-        "Interval": 0,
+        "Interval": 10000,
+        "failRetryNumber": 2,
+        "propertyId": "ID_VCH_TEST",
+        "propertyValue": "2",
+        "operationType": 1,
+        "ResultValueType": 0,
         "ResultCheck": true
       }
     ]
