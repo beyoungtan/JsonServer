@@ -405,63 +405,6 @@
             "resultCheck": true
           }
         ]
-      },
-      {
-        "testType": "静态电气测试",
-        "caseType": "TEST",
-        "caseNo": 3001,
-        "dependencyNo": 0,
-        "caseName": "天窗控制测试",
-        "waitTime": 1000,
-        "execTimes": 1,
-        "retryTimes": 1,
-        "checkType": "CHK-TIN",
-        "weatherMode": 0,
-        "testStepsRespVOList": [
-          {
-            "stepNo": 1,
-            "dependencyNo": 0,
-            "stepName": "天窗控制开",
-            "description": "模拟天窗控制开",
-            "autoFlag": true,
-            "execTime": 2000,
-            "waitTime": 1,
-            "retryTimes": 0,
-            "signalName": "TIN_CURR",
-            "msgValue": "0X11",
-            "method": 1,
-            "resultType": 0,
-            "resultCheck": true
-          }
-        ]
-      },{
-        "testType": "静态电气测试",
-        "caseType": "TEST",
-        "caseNo": 3002,
-        "dependencyNo": 0,
-        "caseName": "车窗控制测试",
-        "waitTime": 1000,
-        "execTimes": 1,
-        "retryTimes": 1,
-        "checkType": "CHK-WIN",
-        "weatherMode": 0,
-        "testStepsRespVOList": [
-          {
-            "stepNo": 1,
-            "dependencyNo": 0,
-            "stepName": "车窗控制开",
-            "description": "模拟车窗控制开",
-            "autoFlag": true,
-            "execTime": 2000,
-            "waitTime": 1,
-            "retryTimes": 0,
-            "signalName": "WIN_CURR",
-            "msgValue": "0x11",
-            "method": 1,
-            "resultType": 0,
-            "resultCheck": true
-          }
-        ]
       }
     ],
     "code": 0,
