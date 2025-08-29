@@ -193,7 +193,7 @@
       {
         "testType": "老化测试",
         "caseType": "TEST",
-        "caseNo": 2001,
+        "caseNo": 1004,
         "dependencyNo": 0,
         "caseName": "CAN总线通信稳定性",
         "waitTime": 1000,
@@ -236,7 +236,7 @@
       {
         "testType": "老化测试",
         "caseType": "TEST",
-        "caseNo": 2002,
+        "caseNo": 1005,
         "dependencyNo": 0,
         "caseName": "CAN报文丢包率检测",
         "waitTime": 1000,
@@ -265,7 +265,7 @@
       {
         "testType": "老化测试",
         "caseType": "TEST",
-        "caseNo": 2003,
+        "caseNo": 1006,
         "dependencyNo": 0,
         "caseName": "LIN总线通信稳定性",
         "waitTime": 1000,
@@ -308,7 +308,7 @@
       {
         "testType": "老化测试",
         "caseType": "TEST",
-        "caseNo": 1004,
+        "caseNo": 1007,
         "dependencyNo": 0,
         "caseName": "电动后尾门测试",
         "waitTime": 1000,
@@ -379,11 +379,11 @@
       },
       {
         "testType": "老化测试",
-        "caseType": "逆向用例",
-        "caseNo": 2004,
-        "dependencyNo": "2003",
+        "caseType": "TEST",
+        "caseNo": 1008,
+        "dependencyNo": 0,
         "caseName": "LIN报文丢失检测",
-        "waitTime": 5,
+        "waitTime": 1000,
         "execTimes": 3,
         "retryTimes": 2,
         "checkType": "CHK-LIN",
@@ -395,7 +395,7 @@
             "stepName": "统计LIN丢包情况",
             "description": "检验丢包率小于0.2%",
             "autoFlag": true,
-            "execTime": 20,
+            "execTime": 5000,
             "waitTime": 0,
             "retryTimes": 0,
             "signalName": "LIN_ERROR",
@@ -409,7 +409,7 @@
       {
         "testType": "静态电气测试",
         "caseType": "TEST",
-        "caseNo": 1005,
+        "caseNo": 3001,
         "dependencyNo": 0,
         "caseName": "天窗控制测试",
         "waitTime": 1000,
@@ -437,7 +437,7 @@
       },{
         "testType": "静态电气测试",
         "caseType": "TEST",
-        "caseNo": 1006,
+        "caseNo": 3002,
         "dependencyNo": 0,
         "caseName": "车窗控制测试",
         "waitTime": 1000,
