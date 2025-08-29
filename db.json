@@ -72,15 +72,6 @@
         "strategy": "串行",
         "testType": "静态电气测试",
         "sort": 8
-      },
-      {
-        "id": 9,
-        "parentId": 0,
-        "checkTypeNo": "CHK-WIN",
-        "checkTypeName": "车窗控制",
-        "strategy": "串行",
-        "testType": "静态电气测试",
-        "sort": 9
       }
     ],
     "code": 0,
