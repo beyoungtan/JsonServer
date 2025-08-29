@@ -1,98 +1,329 @@
 {
-    "data": {"data": [
-        {
-            "id": 1,
-            "testType": "1",
-            "testDomain": "1",
-            "caseType": "1",
-            "caseName": "1",
-            "checkType": "1",
-            "caseNo": 1,
-            "checkSubType": "1",
-            "dependencyNo": 0,
-            "waitTime": 3,
-            "execTimes": 3,
-            "retryTimes": 3,
-            "testVersion": "3",
-            "version": 1,
-            "createTime": 1756179477000,
-            "testStepsRespVOList": [
-                {
-                    "createTime": null,
-                    "updateTime": null,
-                    "creator": null,
-                    "updater": null,
-                    "deleted": null,
-                    "version": null,
-                    "id": 1,
-                    "testType": null,
-                    "testDomain": null,
-                    "stepNo": 1,
-                    "stepName": "1111",
-                    "execTime": 1,
-                    "method": "1",
-                    "chn": null,
-                    "signalName": "buz1",
-                    "msgId": null,
-                    "canfd": null,
-                    "frame": null,
-                    "msgType": null,
-                    "msgCycle": null,
-                    "msgValue": "1",
-                    "resultType": 0,
-                    "resultCheck": true,
-                    "waitTime": 1,
-                    "retryTimes": 1,
-                    "autoFlag": true,
-                    "weatherMode": 1,
-                    "description": "1",
-                    "carType": null,
-                    "testVersion": null,
-                    "dependencyNo": 0,
-                    "isListen": null,
-                    "listenTimes": null,
-                    "listenEndCondition": null,
-                    "carConfigs": null
-                },
-                {
-                    "createTime": null,
-                    "updateTime": null,
-                    "creator": null,
-                    "updater": null,
-                    "deleted": null,
-                    "version": null,
-                    "id": 2,
-                    "testType": null,
-                    "testDomain": null,
-                    "stepNo": 2,
-                    "stepName": "222",
-                    "execTime": 1,
-                    "method": "1",
-                    "chn": null,
-                    "signalName": "buz2",
-                    "msgId": null,
-                    "canfd": null,
-                    "frame": null,
-                    "msgType": null,
-                    "msgCycle": null,
-                    "msgValue": "1",
-                    "resultType": 0,
-                    "resultCheck": true,
-                    "waitTime": 1,
-                    "retryTimes": 1,
-                    "autoFlag": true,
-                    "weatherMode": 1,
-                    "description": "1",
-                    "carType": null,
-                    "testVersion": null,
-                    "dependencyNo": 0,
-                    "isListen": null,
-                    "listenTimes": null,
-                    "listenEndCondition": null,
-                    "carConfigs": null
-                }
-            ]
-        }
-    ]
-    }
+  "checkTypes": {
+    "data": [
+      {
+        "id": 1,
+        "parentId": 0,
+        "checkTypeNo": "CHK-POWER",
+        "checkTypeName": "电源管理",
+        "strategy": "精确匹配",
+        "testType": "静态电气测试",
+        "sort": 1
+      },
+      {
+        "id": 2,
+        "parentId": 1,
+        "checkTypeNo": "CHK-VOLTAGE",
+        "checkTypeName": "电压检测",
+        "strategy": "范围校验",
+        "testType": "静态电气测试",
+        "sort": 2
+      },
+      {
+        "id": 3,
+        "parentId": 1,
+        "checkTypeNo": "CHK-CURRENT",
+        "checkTypeName": "电流检测",
+        "strategy": "范围校验",
+        "testType": "静态电气测试",
+        "sort": 3
+      },
+      {
+        "id": 4,
+        "parentId": 0,
+        "checkTypeNo": "CHK-SIGNAL",
+        "checkTypeName": "信号链路",
+        "strategy": "精确匹配",
+        "testType": "老化测试",
+        "sort": 4
+      },
+      {
+        "id": 5,
+        "parentId": 4,
+        "checkTypeNo": "CHK-CAN",
+        "checkTypeName": "CAN总线",
+        "strategy": "稳定性校验",
+        "testType": "老化测试",
+        "sort": 5
+      },
+      {
+        "id": 6,
+        "parentId": 4,
+        "checkTypeNo": "CHK-LIN",
+        "checkTypeName": "LIN总线",
+        "strategy": "稳定性校验",
+        "testType": "老化测试",
+        "sort": 6
+      }
+    ],
+    "code": 0,
+    "msg": ""
+  },
+  "testCases": {
+    "data": [
+      {
+        "testType": "静态电气测试",
+        "caseType": "正向用例",
+        "caseNo": 1001,
+        "dependencyNo": "",
+        "caseName": "电压正常范围检测",
+        "waitTime": 2,
+        "execTimes": 1,
+        "retryTimes": 1,
+        "checkType": "CHK-VOLTAGE",
+        "weatherMode": 0,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "读取电压信号",
+            "description": "采集电源电压",
+            "autoFlag": true,
+            "execTime": 3,
+            "waitTime": 1,
+            "retryTimes": 0,
+            "signalName": "BAT_VOLT",
+            "msgValue": "12V",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "静态电气测试",
+        "caseType": "正向用例",
+        "caseNo": 1002,
+        "dependencyNo": "1001",
+        "caseName": "电压过低检测",
+        "waitTime": 2,
+        "execTimes": 1,
+        "retryTimes": 1,
+        "checkType": "CHK-VOLTAGE",
+        "weatherMode": 0,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "模拟电压下降",
+            "description": "将电源电压调至9V",
+            "autoFlag": true,
+            "execTime": 3,
+            "waitTime": 1,
+            "retryTimes": 0,
+            "signalName": "BAT_VOLT",
+            "msgValue": "9V",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "静态电气测试",
+        "caseType": "逆向用例",
+        "caseNo": 1003,
+        "dependencyNo": "1002",
+        "caseName": "电流过载检测",
+        "waitTime": 3,
+        "execTimes": 1,
+        "retryTimes": 2,
+        "checkType": "CHK-CURRENT",
+        "weatherMode": 0,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "模拟电流上升",
+            "description": "将电流调至10A",
+            "autoFlag": true,
+            "execTime": 3,
+            "waitTime": 1,
+            "retryTimes": 0,
+            "signalName": "BAT_CURR",
+            "msgValue": "10A",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "老化测试",
+        "caseType": "正向用例",
+        "caseNo": 2001,
+        "dependencyNo": "",
+        "caseName": "CAN总线通信稳定性",
+        "waitTime": 5,
+        "execTimes": 10,
+        "retryTimes": 1,
+        "checkType": "CHK-CAN",
+        "weatherMode": 1,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "持续发送CAN报文",
+            "description": "模拟1小时CAN通信",
+            "autoFlag": true,
+            "execTime": 60,
+            "waitTime": 0,
+            "retryTimes": 0,
+            "signalName": "CAN_MSG",
+            "msgValue": "0x123",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "老化测试",
+        "caseType": "正向用例",
+        "caseNo": 2002,
+        "dependencyNo": "2001",
+        "caseName": "CAN报文丢包率检测",
+        "waitTime": 5,
+        "execTimes": 5,
+        "retryTimes": 2,
+        "checkType": "CHK-CAN",
+        "weatherMode": 1,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "统计丢包情况",
+            "description": "检验丢包率小于0.1%",
+            "autoFlag": true,
+            "execTime": 30,
+            "waitTime": 0,
+            "retryTimes": 0,
+            "signalName": "CAN_ERROR",
+            "msgValue": "LOSS<0.1%",
+            "method": 1,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "老化测试",
+        "caseType": "正向用例",
+        "caseNo": 2003,
+        "dependencyNo": "2002",
+        "caseName": "LIN总线通信稳定性",
+        "waitTime": 10,
+        "execTimes": 8,
+        "retryTimes": 1,
+        "checkType": "CHK-LIN",
+        "weatherMode": 2,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "持续发送LIN报文",
+            "description": "模拟30分钟LIN通信",
+            "autoFlag": true,
+            "execTime": 30,
+            "waitTime": 0,
+            "retryTimes": 0,
+            "signalName": "LIN_MSG",
+            "msgValue": "0x45",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "静态电气测试",
+        "caseType": "正向用例",
+        "caseNo": 1004,
+        "dependencyNo": "1003",
+        "caseName": "电压恢复正常检测",
+        "waitTime": 2,
+        "execTimes": 1,
+        "retryTimes": 1,
+        "checkType": "CHK-VOLTAGE",
+        "weatherMode": 0,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "恢复电压到12V",
+            "description": "模拟电压回到正常范围",
+            "autoFlag": true,
+            "execTime": 2,
+            "waitTime": 1,
+            "retryTimes": 0,
+            "signalName": "BAT_VOLT",
+            "msgValue": "12V",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "老化测试",
+        "caseType": "逆向用例",
+        "caseNo": 2004,
+        "dependencyNo": "2003",
+        "caseName": "LIN报文丢失检测",
+        "waitTime": 5,
+        "execTimes": 3,
+        "retryTimes": 2,
+        "checkType": "CHK-LIN",
+        "weatherMode": 2,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "统计LIN丢包情况",
+            "description": "检验丢包率小于0.2%",
+            "autoFlag": true,
+            "execTime": 20,
+            "waitTime": 0,
+            "retryTimes": 0,
+            "signalName": "LIN_ERROR",
+            "msgValue": "LOSS<0.2%",
+            "method": 1,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      },
+      {
+        "testType": "静态电气测试",
+        "caseType": "正向用例",
+        "caseNo": 1005,
+        "dependencyNo": "1004",
+        "caseName": "电流恢复正常检测",
+        "waitTime": 2,
+        "execTimes": 1,
+        "retryTimes": 1,
+        "checkType": "CHK-CURRENT",
+        "weatherMode": 0,
+        "testStepsRespVOList": [
+          {
+            "stepNo": 1,
+            "dependencyNo": "",
+            "stepName": "恢复电流到5A",
+            "description": "模拟电流回到正常范围",
+            "autoFlag": true,
+            "execTime": 2,
+            "waitTime": 1,
+            "retryTimes": 0,
+            "signalName": "BAT_CURR",
+            "msgValue": "5A",
+            "method": 0,
+            "resultType": 1,
+            "resultCheck": true
+          }
+        ]
+      }
+    ],
+    "code": 0,
+    "msg": ""
+  }
 }
