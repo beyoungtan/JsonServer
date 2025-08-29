@@ -63,15 +63,6 @@
         "strategy": "并行",
         "testType": "老化测试",
         "sort": 7
-      },
-      {
-        "id": 8,
-        "parentId": 0,
-        "checkTypeNo": "CHK-TIN",
-        "checkTypeName": "天窗控制",
-        "strategy": "串行",
-        "testType": "静态电气测试",
-        "sort": 8
       }
     ],
     "code": 0,
@@ -321,35 +312,6 @@
             "msgValue": "LOSS02",
             "method": 1,
             "resultType": 1,
-            "resultCheck": true
-          }
-        ]
-      },
-      {
-        "testType": "静态电气测试",
-        "caseType": "TEST",
-        "caseNo": 3001,
-        "dependencyNo": 0,
-        "caseName": "天窗控制测试",
-        "waitTime": 1000,
-        "execTimes": 1,
-        "retryTimes": 1,
-        "checkType": "CHK-TIN",
-        "weatherMode": 0,
-        "testStepsRespVOList": [
-          {
-            "stepNo": 1,
-            "dependencyNo": 0,
-            "stepName": "天窗控制开",
-            "description": "模拟天窗控制开",
-            "autoFlag": true,
-            "execTime": 2000,
-            "waitTime": 1,
-            "retryTimes": 0,
-            "signalName": "TIN_CURR",
-            "msgValue": "0X11",
-            "method": 1,
-            "resultType": 0,
             "resultCheck": true
           }
         ]
