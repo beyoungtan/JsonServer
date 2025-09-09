@@ -72,7 +72,7 @@
     "data": [
       {
         "testType": "老化测试",
-        "caseType": "INIT",
+        "caseType": "TEST",
         "caseNo": 1001,
         "dependencyNo": 0,
         "caseName": "电压范围检测",
@@ -95,7 +95,7 @@
             "msgValue": "12V",
             "method": 2,
             "resultType": 2,
-            "resultCheck": true
+            "resultCheck": false
           },
           {
             "stepNo": 2,
@@ -110,7 +110,7 @@
             "msgValue": "12V",
             "method": 2,
             "resultType": 2,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       },
