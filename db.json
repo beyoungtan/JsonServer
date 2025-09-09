@@ -139,7 +139,7 @@
             "msgValue": "10A",
             "method": 1,
             "resultType": 2,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       },
@@ -168,7 +168,7 @@
             "msgValue": "0x123",
             "method": 1,
             "resultType": 1,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       },
@@ -197,7 +197,7 @@
             "msgValue": "LOSS01",
             "method": 1,
             "resultType": 0,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       },
@@ -226,7 +226,7 @@
             "msgValue": "0x45",
             "method": 1,
             "resultType": 1,
-            "resultCheck": true
+            "resultCheck": false
           },{
             "stepNo": 2,
             "dependencyNo": 0,
@@ -240,7 +240,7 @@
             "msgValue": "0x45",
             "method": 2,
             "resultType": 1,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       },
@@ -269,7 +269,7 @@
             "msgValue": "0x11",
             "method": 1,
             "resultType": 0,
-            "resultCheck": true
+            "resultCheck": false
           },{
             "stepNo": 2,
             "dependencyNo": 1,
@@ -283,7 +283,7 @@
             "msgValue": "0x12",
             "method": 2,
             "resultType": 0,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       },
@@ -312,7 +312,7 @@
             "msgValue": "LOSS02",
             "method": 1,
             "resultType": 1,
-            "resultCheck": true
+            "resultCheck": false
           }
         ]
       }
