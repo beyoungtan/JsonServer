@@ -4,7 +4,7 @@
       {
         "id": 1,
         "parentId": 0,
-        "checkTypeNo": "VCTRL",
+        "checkTypeCode": "VCTRL",
         "checkTypeName": "车辆控制",
         "strategy": "串行",
         "testType": "老化测试",
@@ -13,7 +13,7 @@
       {
         "id": 2,
         "parentId": 0,
-        "checkTypeNo": "LIGHT",
+        "checkTypeCode": "LIGHT",
         "checkTypeName": "灯光控制",
         "strategy": "并行",
         "testType": "老化测试",
@@ -22,7 +22,7 @@
       {
         "id": 3,
         "parentId": 0,
-        "checkTypeNo": "ENERGY",
+        "checkTypeCode": "ENERGY",
         "checkTypeName": "能量管理",
         "strategy": "串行",
         "testType": "老化测试",
@@ -31,7 +31,7 @@
       {
         "id": 4,
         "parentId": 0,
-        "checkTypeNo": "DRIVE",
+        "checkTypeCode": "DRIVE",
         "checkTypeName": "驾驶辅助",
         "strategy": "串行",
         "testType": "老化测试",
@@ -40,7 +40,7 @@
       {
         "id": 5,
         "parentId": 0,
-        "checkTypeNo": "HVAC",
+        "checkTypeCode": "HVAC",
         "checkTypeName": "空调控制",
         "strategy": "并行",
         "testType": "老化测试",
@@ -49,7 +49,7 @@
       {
         "id": 6,
         "parentId": 0,
-        "checkTypeNo": "OTHER",
+        "checkTypeCode": "OTHER",
         "checkTypeName": "其他设置",
         "strategy": "串行",
         "testType": "静态电气测试",
