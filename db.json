@@ -224,21 +224,6 @@
         "weatherMode": 0,
         "testStepsRespVOList": [
           {
-            "stepNo": 1,
-            "dependencyNo": 0,
-            "stepName": "开启近光灯",
-            "description": "模拟近光灯开启操作",
-            "autoFlag": true,
-            "execTime": 10000,
-            "waitTime": 1000,
-            "retryTimes": 0,
-            "signalName": "ID_LIGHT_OPEN",
-            "msgValue": "2",
-            "method": 2,
-            "resultType": 0,
-            "resultCheck": false
-          },
-          {
             "stepNo": 2,
             "dependencyNo": 1,
             "stepName": "关闭车灯",
