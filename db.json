@@ -296,21 +296,6 @@
             "method": 2,
             "resultType": 0,
             "resultCheck": false
-          },
-          {
-            "stepNo": 2,
-            "dependencyNo": 1,
-            "stepName": "关闭充电口盖",
-            "description": "模拟充电口盖关闭操作",
-            "autoFlag": true,
-            "execTime": 10000,
-            "waitTime": 1000,
-            "retryTimes": 0,
-            "signalName": "ID_CHG_CHGPORT",
-            "msgValue": "0",
-            "method": 2,
-            "resultType": 0,
-            "resultCheck": false
           }
         ]
       },
