@@ -2,58 +2,76 @@
   "checkTypes": {
     "data": [
       {
-        "id": 1,
+        "id": 111,
         "parentId": 0,
-        "checkTypeCode": "VCTRL",
-        "checkTypeName": "车辆控制",
+        "checkTypeCode": "AGING",
+        "checkTypeName": "老化测试",
         "strategy": "串行",
         "testType": "老化测试",
         "sort": 1
       },
       {
-        "id": 2,
+        "id": 112,
         "parentId": 0,
-        "checkTypeCode": "LIGHT",
-        "checkTypeName": "灯光控制",
-        "strategy": "并行",
-        "testType": "老化测试",
+        "checkTypeCode": "ECLECTRIC",
+        "checkTypeName": "静态电气测试",
+        "strategy": "串行",
+        "testType": "静态电气测试",
         "sort": 2
       },
       {
-        "id": 3,
-        "parentId": 0,
-        "checkTypeCode": "ENERGY",
-        "checkTypeName": "能量管理",
+        "id": 1,
+        "parentId": 111,
+        "checkTypeCode": "VCTRL",
+        "checkTypeName": "车辆控制",
         "strategy": "串行",
         "testType": "老化测试",
         "sort": 3
       },
       {
-        "id": 4,
-        "parentId": 0,
-        "checkTypeCode": "DRIVE",
-        "checkTypeName": "驾驶辅助",
-        "strategy": "串行",
+        "id": 2,
+        "parentId": 111,
+        "checkTypeCode": "LIGHT",
+        "checkTypeName": "灯光控制",
+        "strategy": "并行",
         "testType": "老化测试",
         "sort": 4
       },
       {
-        "id": 5,
-        "parentId": 0,
-        "checkTypeCode": "HVAC",
-        "checkTypeName": "空调控制",
-        "strategy": "并行",
+        "id": 3,
+        "parentId": 111,
+        "checkTypeCode": "ENERGY",
+        "checkTypeName": "能量管理",
+        "strategy": "串行",
         "testType": "老化测试",
         "sort": 5
       },
       {
+        "id": 4,
+        "parentId": 111,
+        "checkTypeCode": "DRIVE",
+        "checkTypeName": "驾驶辅助",
+        "strategy": "串行",
+        "testType": "老化测试",
+        "sort": 6
+      },
+      {
+        "id": 5,
+        "parentId": 111,
+        "checkTypeCode": "HVAC",
+        "checkTypeName": "空调控制",
+        "strategy": "并行",
+        "testType": "老化测试",
+        "sort": 7
+      },
+      {
         "id": 6,
-        "parentId": 0,
+        "parentId": 112,
         "checkTypeCode": "OTHER",
         "checkTypeName": "其他设置",
         "strategy": "串行",
         "testType": "静态电气测试",
-        "sort": 6
+        "sort": 8
       }
     ],
     "code": 0,
