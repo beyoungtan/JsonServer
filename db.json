@@ -20,7 +20,7 @@
         "sort": 2
       },
       {
-        "id": 1,
+        "id": 101,
         "parentId": 111,
         "checkTypeCode": "VCTRL",
         "checkTypeName": "车辆控制",
@@ -29,7 +29,7 @@
         "sort": 3
       },
       {
-        "id": 2,
+        "id": 102,
         "parentId": 111,
         "checkTypeCode": "LIGHT",
         "checkTypeName": "灯光控制",
@@ -38,7 +38,7 @@
         "sort": 4
       },
       {
-        "id": 3,
+        "id": 103,
         "parentId": 111,
         "checkTypeCode": "ENERGY",
         "checkTypeName": "能量管理",
@@ -47,7 +47,7 @@
         "sort": 5
       },
       {
-        "id": 4,
+        "id": 104,
         "parentId": 111,
         "checkTypeCode": "DRIVE",
         "checkTypeName": "驾驶辅助",
@@ -56,7 +56,7 @@
         "sort": 6
       },
       {
-        "id": 5,
+        "id": 105,
         "parentId": 111,
         "checkTypeCode": "HVAC",
         "checkTypeName": "空调控制",
@@ -65,7 +65,7 @@
         "sort": 7
       },
       {
-        "id": 6,
+        "id": 106,
         "parentId": 112,
         "checkTypeCode": "OTHER",
         "checkTypeName": "其他设置",
